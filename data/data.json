@@ -1,0 +1,33 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "title": "Complete Project Report",
+            "date_due": "2023-11-15",
+            "description": "Finish the project report and submit it to the supervisor for review.",
+            "category": "Work"
+        },
+        {
+            "id": 2,
+            "title": "Buy Groceries",
+            "date_due": "2023-10-28",
+            "description": "Purchase items from the grocery list, including milk, eggs, and bread.",
+            "category": "Personal"
+        },
+        {
+            "id": 3,
+            "title": "Call Mom",
+            "date_due": "2023-10-26",
+            "description": "Give your mom a call to catch up and see how she's doing.",
+            "category": "Personal"
+        },
+        {
+            "id": 4,
+            "title": "Prepare Presentation",
+            "date_due": "2023-11-10",
+            "description": "Create a PowerPoint presentation for the upcoming meeting.",
+            "category": "Work"
+        }
+    ]
+ }
+ 
