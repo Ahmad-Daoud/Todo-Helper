@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+vEaeCDjLtVkx261ec1CIdKotZ5XpR3IFQznQlGR7L4sndoIOA1cEfeduuJy/7+lwR3KyonI4Fv+xV0NvL5nLg==",
+  "dgSpecHash": "wtTJNMzwVrV2d1GRZTzBNoLdYFAcLmStA2HQ2y/h2bhV1RA3bvq6ESZnm61+h7UaZyYRe+QoodBqNo+rHdX3xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dodi\\Desktop\\.NET_test\\.NET_test.csproj",
+  "projectFilePath": "C:\\Users\\Dodi\\Desktop\\Todo-Helper\\.NET_test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dodi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

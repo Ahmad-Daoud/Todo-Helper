@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Text;
 using System.Text.Json;
 using JSONManip;
+using elementRemoval;
 
 namespace SimpleMenu
 {
@@ -15,18 +16,17 @@ namespace SimpleMenu
         {
             Console.Clear();
             WriteLogo();
-            Say("1", "Open todo-list");
-            Say("2", "Edit an Element");
-            Say("3", "Add an Element");
-            Say("4", "Remove an Element");
-            Say("5", "Empty Todo-List");
-            string choice1 = Console.ReadLine();
-            choice_decision(choice1);
+            Say("1", "Afficher la Todo-List");
+            Say("2", "Modifier un élément");    
+            Say("3", "Ajouter un élément");
+            Say("4", "Supprimer un élément");
+            Say("5", "Vider la Todo-List");
+            string menuChoice = Console.ReadLine();
+            choice_decision(menuChoice);
         }
-
         public static void choice_decision(string choice){
             if (choice == "1") {
-                Console.WriteLine ("Opening Todo List...");
+                Console.WriteLine ("Ouverture de la Todo-List...");
                 todoList = JsonExtr.ReadJsonFile();
                 DisplayTodoList(todoList);
                 Console.ReadKey();
@@ -41,16 +41,16 @@ namespace SimpleMenu
             }
             else if (choice == "4"){
                 // Remove Element
-                Console.Write("Please select the id of the element you wish to remove : ");
-                string choice2 = Console.ReadLine();
-                remove_element(choice2);
+                Console.Write("Veuillez choisir l'ID de l'élément à supprimer : ");
+                string choiceRemove = Console.ReadLine();
+                remove_element(choiceRemove);
             }
             else if (choice == "5"){
                 // Delete Todo-List
                 Console.ReadKey();
             }
             else{
-                Console.WriteLine("Please choose a valid option");
+                Console.WriteLine("Veuillez choisir une option valide");
                 choice = Console.ReadLine();
                 choice_decision(choice);
             }
@@ -61,16 +61,15 @@ namespace SimpleMenu
             Console.Write(Prefix);
             Console.WriteLine("]" + message);
         }
-
         public static void remove_element(string choice){
-            Console.WriteLine("Removed element #" + choice);
+            Console.WriteLine(" Suppression de l'élément #" + choice + "... \n ");
             // Remove Element
             Console.ReadKey();
         }
         public static void write_element(){
-            Console.WriteLine("What is your element's name?");
+            Console.WriteLine("Quel est le nom de votre élément?");
             string element_name = Console.ReadLine();
-            Console.WriteLine("What is your Element's Name");
+            Console.WriteLine("Quelle est la description de votre élément");
             string element_description = Console.ReadLine();
         }
         public static void WriteLogo(){
@@ -80,12 +79,8 @@ namespace SimpleMenu
   |    |(  <_> ) /_/ (  <_> )  \    Y    /\  ___/|  |_|  |_> >  ___/|  | \/
   |____| \____/\____ |\____/____\___|_  /  \___  >____/   __/ \___  >__|   
                     \/    /_____/     \/       \/     |__|        \/       ";
-                    Console.WriteLine(logo);
+            Console.WriteLine(logo);
         }
-
-
-
-
         public static void DisplayTodoList(TodoList todoList)
         {
             if (todoList != null)
@@ -97,14 +92,13 @@ namespace SimpleMenu
                     Console.WriteLine("Due Date: " + todo.DateDue);
                     Console.WriteLine("Description: " + todo.Description);
                     Console.WriteLine("Category: " + todo.Category);
-                    Console.WriteLine(); // Add a line break for separation
+                    Console.WriteLine(); // Write Line pour séparer les éléments
                 }
             }
             else
             {
-                Console.WriteLine("The to-do list is empty or could not be loaded.");
+                Console.WriteLine("La Todo-List est vide ou introuvable.");
             }
         }
-
     }
 }

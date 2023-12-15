@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dodi\\Desktop\\.NET_test\\.NET_test.csproj",
+      "projectUniqueName": "C:\\Users\\Dodi\\Desktop\\Todo-Helper\\.NET_test.csproj",
       "projectName": ".NET_test",
-      "projectPath": "C:\\Users\\Dodi\\Desktop\\.NET_test\\.NET_test.csproj",
+      "projectPath": "C:\\Users\\Dodi\\Desktop\\Todo-Helper\\.NET_test.csproj",
       "packagesPath": "C:\\Users\\Dodi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dodi\\Desktop\\.NET_test\\obj\\",
+      "outputPath": "C:\\Users\\Dodi\\Desktop\\Todo-Helper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dodi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -112,7 +112,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

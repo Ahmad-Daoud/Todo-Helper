@@ -43,7 +43,7 @@ namespace JSONManip
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("An error occurred while reading the JSON file: " + e.Message);
+                    Console.WriteLine("Erreur lors de la lecture du fichier .JSON :  " + e.Message);
                     return null;
                 }
             }
